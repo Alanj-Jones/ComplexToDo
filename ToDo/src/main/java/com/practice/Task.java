@@ -1,22 +1,21 @@
 package com.practice;
 
-import java.util.UUID;
+// import java.util.UUID;
 
 public class Task {
 
-    private final UUID id;
+    // private final int id;
     private String description;
     private boolean completed;
 
-    public Task(UUID id, String description) {
-        this.id = id;
+    public Task(String description) {
         this.description = description;
         this.completed = false;
     }
 
-    public UUID getId() {
-        return id;
-    }
+    // public UUID getId() {
+    //     return id;
+    // }
 
     public String getDescription() {
         return this.description;
