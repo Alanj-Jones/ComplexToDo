@@ -4,7 +4,7 @@ package com.practice;
 
 public class Task {
 
-    // private final int id;
+    // private int id;
     private String description;
     private boolean completed;
 
@@ -25,11 +25,21 @@ public class Task {
         this.description = newDescription;
     }
 
-    public boolean getCompleted() {
+    public boolean isCompleted() {
         return this.completed;
     }
 
     public void setCompleted(boolean isCompleted) {
         this.completed = isCompleted;
     }
+
+
+    @Override
+    public String toString() {
+        return  "Description: " + getDescription() +
+                ", Completed: " + isCompleted();
+    }
+
+    
+
 }

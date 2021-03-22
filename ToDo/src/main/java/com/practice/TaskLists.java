@@ -11,8 +11,13 @@ public class TaskLists {
         this.size = 0;
     }
 
+    public String getTaskList() {
+        return myTasks.toString();
+    }
+
 
     public void addTask(String description) {
         myTasks.put(size, new Task(description) );
+        this.size++;
     }
 }
