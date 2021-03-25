@@ -44,11 +44,11 @@ public class TaskListTest {
         assertTrue(myTasks.getList().get(0).isCompleted());        
     }
 
-    @Test
-    void validateIndexTest() {
-        assertTrue(myTasks.validateIndex(scan.nextInt()) == 0);
-        // assertFalse(myTasks.validateIndex(scan.nextInt()) == 1);
-    }
+    // @Test
+    // void validateIndexTest() {
+    //     assertEquals(0, myTasks.validateIndex(0));
+    //     // assertFalse(myTasks.validateIndex(scan.nextInt()) == 1);
+    // }
 
     @Test
     void removeTaskTest() {
